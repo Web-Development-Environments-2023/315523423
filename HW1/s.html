@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script>
+        let clickCounter = 0; 
+        function addWhenClicked(){
+            clickCounter++;
+            document.getElementById("counter").innerHTML = "number of likes: " + clickCounter;
+        }
+    </script>
+   
+    <head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>    
+        $(document).ready(function() {
+  $('#slideshow img:gt(0)').hide();
+  setInterval(function() {
+    $('#slideshow :first-child').fadeOut()
+      .next('img').fadeIn()
+      .end().appendTo('#slideshow');
+  }, 3000);
+});
+    </script>
+   
+</head>
+    
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<style>
+    ul{
+        text-align: left;
+        background-color:beige;
+        top: 0%;
+        width: 100%;
+    } 
+    li a:hover{
+        background-color: black;
+    }
+    li{
+        display: block;
+        text-decoration:dashed;
+        float: left;
+        padding-inline: 10px;
+        font-size: 20px;
+    }   
+
+    section{
+    
+        padding-top:0cm;
+        background-color:antiquewhite
+
+    }
+
+    h1{
+        font-size: xx-large;
+        text-align: center;
+        text-decoration:underline;
+        background-color:burlywood
+    }
+    slideshow {
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+    slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+    </style>
+<body>
+    <ul>
+        <div id="menu" >
+            
+            <li><img src="logo.jpg" style="width: 20px;"></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#playlist">My Playlist</a></li>
+            <li><a href="#like">Like</a></li>
+            <li><a href="#qrcoder">QR code</a></li>
+            <li><a href="#spa">Q&A</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </div>
+    </ul>	
+
+
+<section id="about" class="section">
+    <br/>
+    <h1>About me</h1>
+    <details style="animation-name: "hello";">
+    <textAbout>
+    Kobe Bryant, (born Aug. 23, 1978, Philadelphia, Pa., U.S.—died Jan. 26, 2020, Calabasas, Calif.), U.S. basketball player. Bryant, whose father also played professional basketball, entered the NBA draft straight from high school. He was picked by the Charlotte Hornets in 1996 but was soon traded to the Los Angeles Lakers. When the 1996–97 season opened, he was the second youngest NBA player in history. Bryant, a shooting guard, helped the Lakers win five championships (2000–02; 2009–10). In 2008 he was named the league’s Most Valuable Player. He retired following the 2015–16 NBA season. In addition to his professional accomplishments, Bryant was a member of the Olympic gold medal-winning U.S. men’s basketball teams in 2008 and 2012. In 2015 he wrote the poem “Dear Basketball,” which served as the basis for a short film (2017) that he narrated. The work won an Academy Award for best animated short film. In 2020 Bryant died in a helicopter crash.
+    </textAbout>
+</details>
+</section>
+
+
+
+<section id="photos" class="section">
+    <br/>
+<h1>My Photos</h1>
+
+<div id="slideshow">
+  <img src="kobe1.jfif">
+  <img src="kobe2.jfif">
+  <img src="kobe3.jfif">
+  <img src="kobe4.jfif">
+    </div>
+
+</section>
+
+
+
+
+<section id="playlist" class="section">
+<br/>
+<h1>my playlist</h1>
+<center>
+    <div class="info">
+        <audio src="noPass.mp3" controls="controls">Your browser does not support the audio element.</audio>
+        <audio src="jobFinish.mp3" controls="controls">Your browser does not support the audio element.</audio>
+        <audio src="HardJob.mp3" controls="controls">Your browser does not support the audio element.</audio>
+    </div>
+</center>
+<br/>
+
+
+
+
+</section>
+
+<section id="like" class="section">
+<br/>
+
+<h1>give me a like</h1>
+<center>
+    <button onclick="addWhenClicked()">תפרגנו בלייק</button><br>
+    <span id="counter"></span>
+</center>
+</section>
+
+<section id="qrcoder" class="section">
+
+<br/>
+<h1>scan my code</h1>
+<center>
+    <img src=QRHW1.PNG width=300 height=300>	
+</center>
+<br/>
+</section>
+
+<section id="spa" class="section">
+<br/>
+<br/>
+<h1>ans</h1>
+<br/>
+</section>
+
+<section id="contact" class="section">
+<br/>
+<br/>
+    <h1>
+    <a href="turiroy@gmail.com"> Contact me </a>
+    </h1>
+<br/>
+
+</section>
+
+</body>
+</html>
+
+
+
+
+  
