@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+    <title>Kobe Bryant Website</title>
     <script>
         let clickCounter = 0; 
         function addWhenClicked(){
@@ -43,40 +43,48 @@
         text-decoration:dashed;
         float: left;
         padding-inline: 10px;
-        font-size: 20px;
+        font-size: 25px;
     }   
+    #menu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color:gold;
+   z-index: 1;
+}
 
     section{
-    
-        padding-top:0cm;
-        background-color:antiquewhite
-
-    }
-
+                padding-top:0cm;
+                background-color:antiquewhite;    
+            }
+    section:hover{
+                background-color: burlywood;
+            }
     h1{
-        font-size: xx-large;
-        text-align: center;
-        text-decoration:underline;
-        background-color:burlywood
-    }
+                font-size: xx-large;
+                text-align: center;
+                text-decoration:underline;
+                
+            }
     slideshow {
-  width: 500px;
-  height: 300px;
-  position: relative;
-}
+                width: 500px;
+                height: 300px;
+                position: relative;
+                }
 
     slideshow img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                }
 
     </style>
 <body>
     <ul>
-        <div id="menu" >
+        <div id="menu">
             
             <li><img src="logo.jpg" style="width: 20px;"></li>
             <li><a href="#about">About Me</a></li>
@@ -94,7 +102,9 @@
     <br/>
     <h1>About me</h1>
     <details>
-    <textAbout>
+       
+        <summary style="font-size: xx-large;">Click me for details</summary>
+    <textAbout style="font-size: x-large;">
     Kobe Bryant, (born Aug. 23, 1978, Philadelphia, Pa., U.S.—died Jan. 26, 2020, Calabasas, Calif.), U.S. basketball player. Bryant, whose father also played professional basketball, entered the NBA draft straight from high school. He was picked by the Charlotte Hornets in 1996 but was soon traded to the Los Angeles Lakers. When the 1996–97 season opened, he was the second youngest NBA player in history. Bryant, a shooting guard, helped the Lakers win five championships (2000–02; 2009–10). In 2008 he was named the league’s Most Valuable Player. He retired following the 2015–16 NBA season. In addition to his professional accomplishments, Bryant was a member of the Olympic gold medal-winning U.S. men’s basketball teams in 2008 and 2012. In 2015 he wrote the poem “Dear Basketball,” which served as the basis for a short film (2017) that he narrated. The work won an Academy Award for best animated short film. In 2020 Bryant died in a helicopter crash.
     </textAbout>
 </details>
@@ -105,14 +115,14 @@
 <section id="photos" class="section">
     <br/>
 <h1>My Photos</h1>
-
+<center>
 <div id="slideshow">
   <img src="kobe1.jfif">
   <img src="kobe2.jfif">
   <img src="kobe3.jfif">
   <img src="kobe4.jfif">
     </div>
-
+</center>
 </section>
 
 
@@ -120,8 +130,12 @@
 
 <section id="playlist" class="section">
 <br/>
-<h1>my playlist</h1>
+<h1>My Playlist</h1>
 <center>
+    <video width="640" height="360" controls>
+  <source src="KobeTop10.mp4" type="video/mp4">
+</video>
+
     <div class="info">
         <audio src="noPass.mp3" controls="controls">Your browser does not support the audio element.</audio>
         <audio src="jobFinish.mp3" controls="controls">Your browser does not support the audio element.</audio>
@@ -138,17 +152,18 @@
 <section id="like" class="section">
 <br/>
 
-<h1>give me a like</h1>
+<h1>Give me a like</h1>
 <center>
-    <button onclick="addWhenClicked()">תפרגנו בלייק</button><br>
-    <span id="counter"></span>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="Y49g9AvB"></script>
+<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
 </center>
 </section>
 
 <section id="qrcoder" class="section">
 
 <br/>
-<h1>scan my code</h1>
+<h1>Scan My QR</h1>
 <center>
     <img src=qrcode.png width=300 height=300>	
 </center>
@@ -158,18 +173,66 @@
 <section id="spa" class="section">
 <br/>
 <br/>
-<h1>ans</h1>
+<h1>ANS Web1-Web2-Web3</h1>
 <br/>
+
+
+    <table style="font-size: x-large;">
+  <tr>
+    <th>First</th>
+    <th>Second</th>
+    <th>Third</th>
+  </tr>
+  <tr>
+    <td><ans1>1.	Read&write - Web1 was oriented for reading web only while web2 is dealing with read & write web. 
+So, as a use case – with web1 the user only read the information from the website, with  web2 we are able to share the information threw the web for other people to see it, and finally with web3 we could get content which has also a semantic connection and contribute higher level of data. 
+</ans1></td>
+    <td>
+<ans2>
+    2.	Multimedia – Web1 was primarily text-based, and multimedia was limited. Web2 includes images, video etc. Web3 is taking the web to another level where it can present the content in various devices. 
+So as a use case – with web1 the user only read text, with web2 the user can see also pictures and finally with web3 you can see the info from your mobile, CPU, or any other device. 
+    </ans2></td>
+    <td>
+<ans3>
+    3.	Control the content – The control on the content in Web1 was dominated by institutions, with web2 its different where the user has more control over the content and the user experience. And finally the Web3 which enters the blockchain world and takes it to the next level and allow the users to control their data and interact directly with each other without intermediaries. 
+So as use case – you can control your data with blockchain technology as a unique key for getting the info beside aside to not having control at all or have a small influence on it. 
+
+    </ans3>
+</td>
+  </tr>
+  
+</table>
+
 </section>
 
 <section id="contact" class="section">
 <br/>
 <br/>
     <h1>
-    <a href="turiroy@gmail.com"> Contact me </a>
-    </h1>
+        Contact Me
+    </h1>  
+   
+
+  <center style="font-size: x-large;">
+    <a href="mailto:turiskir@post.bgu.ac.il?subject=Regarding%20Your%20Website&body=Hello,%20I%20have%20a%20question%20about%20your%20website.">Click here to open mail browser :) </a>
+ 
+    <form action="#" method="post">
+        <br/>
+        <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+<br/>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+<br/>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+<br/>
 <br/>
 
+    <button type="submit">Send</button>
+  </form>
+<br/>
+</center>
 </section>
 
 </body>
@@ -177,3 +240,5 @@
 
 
 
+
+  
